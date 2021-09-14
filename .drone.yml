@@ -1,0 +1,9 @@
+pipeline:
+  fmt:
+    image: jmccann/drone-terraform:latest
++   actions:
++     - fmt
++   fmt_options:
++     write: false
++     diff: true
++     check: true
