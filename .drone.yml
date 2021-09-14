@@ -1,6 +1,15 @@
-pipeline:
-  terraform:
-    image: jmccann/drone-terraform:latest
-+   actions:
-+     - validate
-+     - plan
+---
+kind: pipeline
+name: test
+
+platform:
+  os: linux
+  arch: amd64
+    
+steps:
+- name: run terraform
+  image: jmccann/drone-terraform:latest
+  settings:
+    actions:
+      - validate
+      - plan
