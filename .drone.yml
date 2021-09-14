@@ -1,6 +1,6 @@
 pipeline:
   terraform:
-    image: jmccann/drone-terraform:5
+    image: jmccann/drone-terraform:latest
 +   actions:
 +     - validate
 +     - plan
