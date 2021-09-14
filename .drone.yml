@@ -1,9 +1,6 @@
 pipeline:
-  fmt:
-    image: jmccann/drone-terraform:latest
+  terraform:
+    image: jmccann/drone-terraform:5
 +   actions:
-+     - fmt
-+   fmt_options:
-+     write: false
-+     diff: true
-+     check: true
++     - validate
++     - plan
