@@ -14,6 +14,6 @@ provider "aci" {
   insecure = true
 }
 
-resource "aci_tenant" "CX" {
+resource "aci_tenant" "CX2" {
   name = "CX"
 }
