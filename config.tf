@@ -13,3 +13,7 @@ provider "aci" {
   url      = "https://sandboxapicdc.cisco.com"
   insecure = true
 }
+
+resource "aci_tenant" "CX" {
+  name = "CX"
+}
